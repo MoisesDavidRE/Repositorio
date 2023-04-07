@@ -1,5 +1,10 @@
 Comandos Git Bash resumen parafraseado
 
+git clone    : Permite clonar un repositorio, en caso de utilizar el servicio http, debe contener el enlace del cual vamos a clonar el repositorio, este enlace 
+               se consigue dentro del repositorio en Git Hub, como ejemplo el comando para clonar un repositorio de manera local queda de la siguiente manera: 
+               "git clone https://github.com/MoisesDavidRE/PrimerRepositorio.git", es importante recalcar que el repositorio se clonará en la carpeta donde nos 
+               encontremos actualmente, por eso debemos primero localizar git bash en la ruta adecuada para la clonación del repositorio
+
 git remote -v  : Da una descripción de los enlaces asociados al repositorio donde se van a agregar u obtener las actualizaciones
 
 git status  :   Proporciona un status de nuestro repositorio local comparado con el repositorio remoto
@@ -13,14 +18,21 @@ git add .    :  Permite agregar los cambios realizados al área de preparación 
                 es importante recalcar que el . en "git add ." significa que se agregan al área de preparación TODOS los cambios realizados en la rama especificada
 
 git commit   :   Nos permite agregar un nuevo commit una vez que hayamos agregado al área de preparación los cambios que se quieran mandar al repositorio remoto (esta
-acción se logra con el comando anterior "git add ."), posteriormente ya nos es posible utilizar el comando "git push"
+                 acción se logra con el comando anterior "git add ."), posteriormente ya nos es posible utilizar el comando "git push"
 
 git push   : Una vez creado nuestro commit con el comando "git commit" ahora podremos mandar nuestros cambios agregados al área de preparación, para esto utilizamos
-             el comando "git push", cabe recalcar que es necesario iniciar sesión en la ventana emergente para poder actualizar nuestros cambios en el repositorio local
+             el comando "git push", cabe recalcar que es necesario iniciar sesión en la ventana emergente para poder actualizar nuestros cambios en el repositorio
+             local
              sobre el repositorio remoto. En caso de que no querramos utilizar el inicio de sesión podemos configurar tokens que pueden utilizar terceras personas, 
-             la accesibilidad y los permisos sobre el repositorio remoto dependen del tipo de token y la configuración del mismo que el dueño del repositorio haya configurado.
-             Los tokens son excelentes alternativas para trabajos en equipo. Una vez iniciada la sesión o activación de un token podremos mandar las actualizaciones con "git push".
+             la accesibilidad y los permisos sobre el repositorio remoto dependen del tipo de token y la configuración del mismo que el dueño del repositorio haya
+             configurado.
+             Los tokens son excelentes alternativas para trabajos en equipo. Una vez iniciada la sesión o activación de un token podremos mandar las actualizaciones
+             con "git push".
 
-             Al igual que se puede hacer con el comando "git pull origin main", también podemos especificar la dirección sobre la cual vamos a escribir los cambios realizados de manera
-             local, quedando de la siguiente manera: "git push origin main", donde origin hace referencia al enlace asociado del repositorio y main hace referencia a la rama sobre la cual
-             haremos los cambios.
+             Al igual que se puede hacer con el comando "git pull origin main", también podemos especificar la dirección sobre la cual vamos a escribir los cambios
+             realizados de manera
+             local, quedando de la siguiente manera: "git push origin main", donde origin hace referencia al enlace asociado del repositorio y main hace referencia a
+             la rama sobre la cual haremos los cambios.
+
+git log  :  Muestra el historial de commits realizados sobre el repositorio, los commits incluyen los realizados sobre el repositorio remoto incluidos a la hora de 
+            clonarlos y, en caso de haberlos, los commits realizados en el repositorio local.
