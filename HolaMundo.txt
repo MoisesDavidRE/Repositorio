@@ -21,4 +21,6 @@ git push   : Una vez creado nuestro commit con el comando "git commit" ahora pod
              la accesibilidad y los permisos sobre el repositorio remoto dependen del tipo de token y la configuración del mismo que el dueño del repositorio haya configurado.
              Los tokens son excelentes alternativas para trabajos en equipo. Una vez iniciada la sesión o activación de un token podremos mandar las actualizaciones con "git push".
 
-
+             Al igual que se puede hacer con el comando "git pull origin main", también podemos especificar la dirección sobre la cual vamos a escribir los cambios realizados de manera
+             local, quedando de la siguiente manera: "git push origin main", donde origin hace referencia al enlace asociado del repositorio y main hace referencia a la rama sobre la cual
+             haremos los cambios.
