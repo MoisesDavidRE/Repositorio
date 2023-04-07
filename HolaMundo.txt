@@ -1,5 +1,24 @@
-Comandos Git Bash
+Comandos Git Bash resumen parafraseado
 
 git remote -v  : Da una descripción de los enlaces asociados al repositorio donde se van a agregar u obtener las actualizaciones
 
 git status  :   Proporciona un status de nuestro repositorio local comparado con el repositorio remoto
+
+git pull   :  Actualiza el repositorio local en caso de que el repositorio remoto contenga nuevas actualizaciones, otra manera de 
+              escribir el comando es indicando la dirección origen y la rama sobre la cual se quieren obtener los cambios, por ejemplo, 
+              git pull origin main, en el comando anterior "origin" indica la dirección de origen asociada anteriormente y main hace referencia a la
+              rama sobre la cual se quieren obtener los cambios
+
+git add .    :  Permite agregar los cambios realizados al área de preparación para poder agregar nuestro commit posteriormente con el comando git commit, 
+                es importante recalcar que el . en "git add ." significa que se agregan al área de preparación TODOS los cambios realizados en la rama especificada
+
+git commit   :   Nos permite agregar un nuevo commit una vez que hayamos agregado al área de preparación los cambios que se quieran mandar al repositorio remoto (esta
+acción se logra con el comando anterior "git add ."), posteriormente ya nos es posible utilizar el comando "git push"
+
+git push   : Una vez creado nuestro commit con el comando "git commit" ahora podremos mandar nuestros cambios agregados al área de preparación, para esto utilizamos
+             el comando "git push", cabe recalcar que es necesario iniciar sesión en la ventana emergente para poder actualizar nuestros cambios en el repositorio local
+             sobre el repositorio remoto. En caso de que no querramos utilizar el inicio de sesión podemos configurar tokens que pueden utilizar terceras personas, 
+             la accesibilidad y los permisos sobre el repositorio remoto dependen del tipo de token y la configuración del mismo que el dueño del repositorio haya configurado.
+             Los tokens son excelentes alternativas para trabajos en equipo. Una vez iniciada la sesión o activación de un token podremos mandar las actualizaciones con "git push".
+
+
