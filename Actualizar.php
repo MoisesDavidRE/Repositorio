@@ -3,7 +3,7 @@
 $x=1;
 ?>
 <?php while($x < 11 ): ?>
-    <ul>Elemento <?php echo $x ?> </ul> 
+    <ul>Cambio<?php echo $x ?> </ul> 
 <?php $x++; endwhile ?>
 
 
