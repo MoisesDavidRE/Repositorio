@@ -1,1 +1,5 @@
-¡Hola Mundo! 
+Comandos Git Bash
+
+git remote -v  : Da una descripción de los enlaces asociados al repositorio donde se van a agregar u obtener las actualizaciones
+
+git status  :   Proporciona un status de nuestro repositorio local comparado con el repositorio remoto
